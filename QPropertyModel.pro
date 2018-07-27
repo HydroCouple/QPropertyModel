@@ -142,19 +142,16 @@ win32 {
 CONFIG(debug, debug|release) {
 
     win32 {
-       QMAKE_CXXFLAGS += /MDd  /O2
+       QMAKE_CXXFLAGS += /MDd /O2
     }
 
     macx {
-       QMAKE_CFLAGS   += -g -O3
-       QMAKE_CXXFLAGS += -g -O3
+       QMAKE_CXXFLAGS += -O3
     }
 
     linux {
-       QMAKE_CFLAGS   += -g -O3
-       QMAKE_CXXFLAGS += -g -O3
+       QMAKE_CXXFLAGS += -O3
     }
-
 
    DESTDIR = ./build/debug
    OBJECTS_DIR = $$DESTDIR/.obj
