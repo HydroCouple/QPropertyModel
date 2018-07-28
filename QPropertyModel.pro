@@ -135,7 +135,7 @@ FORMS += ./forms/qstringlistpropertyitemeditor.ui \
 
 win32 {
     QMAKE_CXXFLAGS += /MP
-    QMAKE_LFLAGS += /MP /incremental /debug:fastlink
+    QMAKE_LFLAGS += /incremental /debug:fastlink
 }
 
 
